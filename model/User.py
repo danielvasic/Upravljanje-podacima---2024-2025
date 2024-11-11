@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr, validator
-from hashlib import CryptContext
+from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
